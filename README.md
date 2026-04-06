@@ -8,7 +8,3 @@ Assets da Aula:
 https://free3d.com/pt/3d-model/lettucebibb-v1--505458.html
 https://free3d.com/pt/3d-model/pearlturtle-v1--573902.html
 
-Integrantes:
-Maria Eduarda Biscalquini Silva RA 00126949
-Jhonathan Alves de Melo RA 00116006
-Francisco Magalhães de Araújo RA 00121730
