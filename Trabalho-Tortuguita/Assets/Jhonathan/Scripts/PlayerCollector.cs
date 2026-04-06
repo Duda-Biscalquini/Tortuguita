@@ -1,36 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Content;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerCollector : MonoBehaviour
 {
-    public GameManager gameManager;
-
-    public void OnTriggerEnter(Collider other)
+    // Start is called before the first frame update
+    void Start()
     {
-        if (other.CompareTag("Collecttible"))
-        {
-            Collecttible collectible = other.GetComponent<Collecttible>();
-
-            if (collectible != null)
-            {
-                gameManager.AddPoints(collectible.points);
-            }
-
-            Destroy(other.gameObject);
-        }
- 
-    
-    
+        
     }
 
-    
-
-       
-          
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
-
-
-
+}

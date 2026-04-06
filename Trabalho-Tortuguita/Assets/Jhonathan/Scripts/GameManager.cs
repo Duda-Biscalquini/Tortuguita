@@ -1,22 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
     public int score = 0;
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
 
-    public void AddPoints(int value)
+    public void AddPoints(int points)
     {
-        score += value;
-        Debug.Log("Pontuação: " + score);
-
-        if (scoreText != null)
-        {
-            scoreText.text = "Pontos: " + score.ToString();
-        }
+        score += points;
+        if (scoreText != null) scoreText.text = score.ToString();
     }
 }
