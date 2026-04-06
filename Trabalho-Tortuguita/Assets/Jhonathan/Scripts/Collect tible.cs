@@ -1,20 +1,23 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollector : MonoBehaviour
+public class Collecttible : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    public int points = 1;
+
+    public float rotationSpeed = 100f;
+
+    // Update is called once per frame
+    void Update()
     {
-        if (other.CompareTag("Collectible"))
-        {
-            Collectible c = other.GetComponent<Collectible>();
-            if (c != null)
-            {
-                FindObjectOfType<GameManager>().AddPoints(c.points);
-            }
-            Destroy(other.gameObject);
-        }
+        RotateObject();
     }
+
+    void RotateObject()
+    {
+        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+    }
+
 }
